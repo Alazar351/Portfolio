@@ -1,0 +1,62 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import rightArrow from "../Icons/right-arrow.png";
+---
+
+<MainLayout title="Portfolio">
+  <section class="center">
+    <div class="project">
+      <div class="breadcrumb">
+        <div class="list">
+          <a href="/">Home</a>
+          <img src={rightArrow} width="9px" />
+          <p>Portfolio</p>
+        </div>
+      </div>
+      <h3>Portfolio</h3>
+      <div class="slider"></div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid white;
+    width: 900px;
+    height: 723px;
+  }
+
+  .list {
+    display: inline-block;
+    background-color: #222222;
+    border-radius: 5px;
+    padding: 5px 20px;
+    letter-spacing: 0.2px;
+    line-height: 27.2px;
+  }
+  .list p {
+    display: inline;
+    color: #a2a2a2;
+  }
+  .list a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h3 {
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 39px;
+    font-size: 30px;
+  }
+</style>

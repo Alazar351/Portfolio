@@ -7,8 +7,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     <h1 class="name">
       Alazar <span class="primary-color">Lema</span>
     </h1>
-    <h3 class="job">Frontend Engineer</h3>
-    <button class="contactBtn"><a href="/Contact">Get in Touch</a></button>
+    <h3 class="job">Frontend Developer</h3>
+    <a class="contactBtn" href="/Contact">Get in Touch</a>
   </div>
 </MainLayout>
 
@@ -51,9 +51,16 @@ import MainLayout from "../layouts/MainLayout.astro";
     padding: 8px 40px;
     line-height: 24px;
     text-align: center;
+    font-family: Poppins;
   }
 
-  .contactBtn a {
+  .contactBtn {
     color: white;
+    text-decoration: none;
+  }
+
+  .contactBtn:hover {
+    color: black;
+    background-color: white;
   }
 </style>

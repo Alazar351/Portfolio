@@ -1,0 +1,89 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="About">
+  <div class="about">
+    <div class="intro">
+      <h3 class="name">Alazar <span class="primary-color">Lema</span></h3>
+      <h3 class="job">Frontend Developer</h3>
+    </div>
+    <div class="desc">
+      <p>
+        My name is <span>Alazar Lema</span>. a junior frontend developer
+        passionate about crafting user-friendly web experiences. With a
+        foundation in HTML, CSS, and JavaScript, I'm dedicated to creating
+        clean, interactive interfaces. I'm excited to contribute to projects
+        that make an impact and eager to learn and grow alongside experienced
+        developers.
+      </p>
+    </div>
+    <a class="aboutBtn" href="/Projects">Learn More</a>
+  </div>
+</MainLayout>
+
+<style>
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+  }
+  .name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: white;
+    margin: 0px 0px 10px;
+  }
+
+  .job {
+    display: inline-block;
+    color: #a2a2a2;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .intro {
+    border-bottom: 1px dashed rgb(162, 162, 162, 0.35);
+  }
+
+  .desc {
+    color: #a2a2a2;
+    font-size: 17px;
+    font-family: Poppins;
+    margin: 50px 0px 20px;
+    max-width: 450px;
+  }
+
+  .desc span {
+    display: inline;
+    color: white;
+  }
+
+  .aboutBtn {
+    background-color: rgb(var(--primary-color));
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0.2px;
+    padding: 8px 40px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Poppins;
+  }
+
+  .aboutBtn:hover {
+    color: black;
+    background-color: white;
+  }
+</style>

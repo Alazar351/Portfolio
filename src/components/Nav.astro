@@ -1,14 +1,14 @@
 ---
-import icon from "../Icons/briefcase.png";
+import icon from "../Icons/letter-a.png";
 ---
 
 <nav>
   <div class="navbar">
-    <a href="/"><img src={icon} width="30px" /></a>
+    <a href="/"><img src={icon} width="40px" /></a>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/About">About</a></li>
-      <li><a href="/Portfolio">Projects</a></li>
+      <li><a href="/Projects">Projects</a></li>
       <li><a href="/Contact">Contact</a></li>
     </ul>
   </div>
@@ -17,17 +17,14 @@ import icon from "../Icons/briefcase.png";
 <style>
   nav {
     display: flex;
-    justify-content: space-between;
-    background-color: rgba(195, 234, 252, 0.685);
+    justify-content: center;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     width: calc(100% - 50%);
-    margin-left: calc(100% - 80%);
-    padding-top: 20px;
-    background-color: rgba(124, 124, 124, 0.158);
+    padding-top: 40px;
   }
 
   ul {
@@ -38,14 +35,16 @@ import icon from "../Icons/briefcase.png";
   }
 
   li a {
-    padding: 10px;
-    color: black;
+    color: white;
     text-decoration: none;
     margin-left: 20px;
   }
 
   li a:hover {
-    background-color: black;
-    color: white;
+    color: rgb(var(--primary-color));
+  }
+
+  li a:active {
+    color: rgb(var(--primary-color));
   }
 </style>

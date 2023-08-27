@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Astro Starter Kit: Basics  <a href="https://www.flaticon.com/free-icons/letter-a" title="letter a icons">Letter a icons created by Ivan Repin - Flaticon</a>
 
 ```
 npm create astro@latest -- --template basics

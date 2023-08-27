@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: 235, 74, 76;
+}
+
+.primary-color {
+  color: rgb(var(--primary-color));
+}

@@ -2,6 +2,58 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Portfolio">
-  <p>Now it works</p>
+<MainLayout title="Home">
+  <div class="home">
+    <h1 class="name">
+      Alazar <span class="primary-color">Lema</span>
+    </h1>
+    <h3 class="job">Frontend Engineer</h3>
+    <button class="contactBtn"><a href="/Contact">Get in Touch</a></button>
+  </div>
 </MainLayout>
+
+<style>
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: calc(100vh - 54px);
+  }
+
+  .name {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .job {
+    color: #a2a2a2;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .contactBtn {
+    background-color: rgb(var(--primary-color));
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0.2px;
+    padding: 8px 40px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .contactBtn a {
+    color: white;
+  }
+</style>

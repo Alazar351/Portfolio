@@ -6,37 +6,42 @@ import icon from "../Icons/briefcase.png";
   <div class="navbar">
     <a href="/"><img src={icon} width="30px" /></a>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/About">About</a></li>
+      <li><a href="/Portfolio">Projects</a></li>
+      <li><a href="/Contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(195, 234, 252, 0.685);
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    width: calc(100% - 50%);
+    margin-left: calc(100% - 80%);
+    padding-top: 20px;
     background-color: rgba(124, 124, 124, 0.158);
   }
 
   ul {
+    display: flex;
     list-style-type: none;
     overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-size: 25px;
+    font-size: 23px;
   }
 
-  li {
-    float: left;
-  }
   li a {
-    display: block;
     padding: 10px;
     color: black;
     text-decoration: none;
+    margin-left: 20px;
   }
 
   li a:hover {

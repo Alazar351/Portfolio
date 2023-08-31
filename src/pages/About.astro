@@ -1,5 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import html from "../Icons/html-5.png";
+import css from "../Icons/css-3.png";
+import react from "../Icons/physics.png";
+import js from "../Icons/js.png";
 ---
 
 <MainLayout title="About">
@@ -7,6 +11,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     <div class="intro">
       <h3 class="name">Alazar <span class="primary-color">Lema</span></h3>
       <h3 class="job">Frontend Developer</h3>
+      <div class="img">
+        <img src={html} />
+        <img src={css} />
+        <img src={react} />
+        <img src={js} />
+      </div>
     </div>
     <div class="desc">
       <p>
@@ -23,6 +33,14 @@ import MainLayout from "../layouts/MainLayout.astro";
 </MainLayout>
 
 <style>
+  .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 30px;
+  }
   .about {
     display: flex;
     align-items: center;
@@ -62,6 +80,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-family: Poppins;
     margin: 50px 0px 20px;
     max-width: 450px;
+    line-height: 24px;
+    text-align: center;
   }
 
   .desc span {

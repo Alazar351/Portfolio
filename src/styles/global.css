@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: 235, 74, 76;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .primary-color {

@@ -1,5 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/contact.css";
 ---
 
-<MainLayout><p>Contact Page</p></MainLayout>
+<MainLayout>
+  <form name="contact" method="POST" data-netlify="true">
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+    <input
+      name="email"
+      type="text"
+      class="feedback-input"
+      placeholder="Email"
+    />
+    <textarea name="text" class="feedback-input" placeholder="Comment"
+    ></textarea>
+    <input type="submit" value="SUBMIT" />
+  </form>
+</MainLayout>

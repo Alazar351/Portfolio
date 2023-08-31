@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import rightArrow from "../Icons/right-arrow.png";
+import MySwiper from "../components/MySwiper";
 ---
 
 <MainLayout title="Portfolio">
@@ -13,13 +14,21 @@ import rightArrow from "../Icons/right-arrow.png";
           <p>Portfolio</p>
         </div>
       </div>
-      <h3>Portfolio</h3>
-      <div class="slider"></div>
+      <div class="lowerBorder">
+        <h3>Portfolio</h3>
+      </div>
+      <MySwiper client:load />
     </div>
   </section>
 </MainLayout>
 
 <style>
+  .lowerBorder {
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #a2a2a2;
+  }
   .center {
     display: flex;
     justify-content: center;
@@ -28,11 +37,12 @@ import rightArrow from "../Icons/right-arrow.png";
   }
   .project {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    border: 3px solid white;
     width: 900px;
     height: 723px;
+    padding-left: 15px;
+    padding-top: 60px;
   }
 
   .list {

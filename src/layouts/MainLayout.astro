@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
 import "../styles/global.css";
+import icon from "../Icons/letter-a.png";
 const { title = "Default title" } = Astro.props;
 ---
 
@@ -8,6 +9,7 @@ const { title = "Default title" } = Astro.props;
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link rel="icon" href={icon} sizes="any" />
     <title>{title}</title>
   </head>
   <body>

@@ -73,7 +73,7 @@ export default function MySwiper() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
+        {/* <SwiperSlide className="swiper-slide">
           <div className="container">
             <div className="desc">
               <h2>Vuestic UI</h2>
@@ -94,7 +94,7 @@ export default function MySwiper() {
               </a>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/*
         <SwiperSlide className="swiper-slide">Slide 4</SwiperSlide>
         <SwiperSlide className="swiper-slide">Slide 5</SwiperSlide> */}

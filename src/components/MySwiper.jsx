@@ -73,28 +73,7 @@ export default function MySwiper() {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className="swiper-slide">
-          <div className="container">
-            <div className="desc">
-              <h2>Vuestic UI</h2>
-              <p>
-                Vuestic UI is an OpenSource Vue 3 based UI framework. It is a
-                MIT-licensed UI framework that provides ready-to-use frontend
-                components that are easily configurable and speed up development
-                of responsive and fast-loading web interfaces. I made a minor
-                contribution to their project.
-              </p>
-            </div>
-            <div className="link">
-              <a
-                href="https://github.com/epicmaxco/vuestic-ui/pull/3857"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </SwiperSlide> */}
+
         {/*
         <SwiperSlide className="swiper-slide">Slide 4</SwiperSlide>
         <SwiperSlide className="swiper-slide">Slide 5</SwiperSlide> */}

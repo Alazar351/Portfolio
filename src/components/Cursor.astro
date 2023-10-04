@@ -1,0 +1,53 @@
+<div class="cursor site-wide">
+  <div class="pointer"></div>
+</div>
+
+<script>
+  const site_wide_cursor = document.querySelector(".cursor.site-wide");
+
+  const TrackCursor = (evt) => {
+    const w = site_wide_cursor.clientWidth;
+    const h = site_wide_cursor.clientHeight;
+
+    site_wide_cursor.style.transform = `translate(${evt.clientX - w / 1.7}px, ${
+      evt.clientY - h / 1.7
+    }px)`;
+  };
+
+  document.addEventListener("mouseenter", () => {
+    site_wide_cursor.style.display = "block";
+  });
+
+  document.addEventListener("mouseleave", () => {
+    site_wide_cursor.style.display = "none";
+  });
+
+  document.addEventListener("mousemove", TrackCursor);
+</script>
+
+<style>
+  .cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+
+  .site-wide {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+  }
+
+  .site-wide .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%, -50%);
+    background-color: red;
+  }
+</style>

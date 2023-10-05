@@ -3,7 +3,11 @@
 </div>
 
 <script>
-  const site_wide_cursor = document.querySelector(".cursor.site-wide");
+  const site_wide_cursor = document.querySelector(".site-wide");
+  const buttons = document.querySelectorAll("button");
+  const links = document.querySelectorAll("a");
+  const swiperButtonPrev = document.querySelectorAll(".swiper-button-prev");
+  const swiperButtonNext = document.querySelectorAll(".swiper-button-next");
 
   const TrackCursor = (evt) => {
     const w = site_wide_cursor.clientWidth;
@@ -14,15 +18,43 @@
     }px)`;
   };
 
-  document.addEventListener("mouseenter", () => {
-    site_wide_cursor.style.display = "block";
+  window.addEventListener("beforeunload", () => {
+    site_wide_cursor.classList.remove("active");
   });
-
-  document.addEventListener("mouseleave", () => {
-    site_wide_cursor.style.display = "none";
-  });
-
   document.addEventListener("mousemove", TrackCursor);
+
+  buttons.forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      site_wide_cursor.classList.add("active");
+    });
+    button.addEventListener("mouseleave", () => {
+      site_wide_cursor.classList.remove("active");
+    });
+  });
+  links.forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+      site_wide_cursor.classList.add("active");
+    });
+    link.addEventListener("mouseleave", () => {
+      site_wide_cursor.classList.remove("active");
+    });
+  });
+  swiperButtonPrev.forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      site_wide_cursor.classList.add("active");
+    });
+    button.addEventListener("mouseleave", () => {
+      site_wide_cursor.classList.remove("active");
+    });
+  });
+  swiperButtonNext.forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      site_wide_cursor.classList.add("active");
+    });
+    button.addEventListener("mouseleave", () => {
+      site_wide_cursor.classList.remove("active");
+    });
+  });
 </script>
 
 <style>
@@ -31,7 +63,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    display: none;
+    display: block;
     pointer-events: none;
   }
 
@@ -39,7 +71,8 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid rgb(255, 0, 0, 0.5);
+    transition: opacity 0.19s ease-in-out;
   }
 
   .site-wide .pointer {
@@ -48,7 +81,20 @@
     left: 50%;
     width: 5px;
     height: 5px;
+    border-radius: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+    transition: width 0.19s ease-in-out, height 0.19s ease-in-out,
+      opacity 0.19s ease-in-out;
+  }
+
+  .site-wide.active {
+    opacity: 0.3;
+  }
+
+  .site-wide.active .pointer {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
   }
 </style>

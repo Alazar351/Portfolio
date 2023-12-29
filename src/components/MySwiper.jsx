@@ -93,7 +93,7 @@ export default function MySwiper() {
                 Live Site
               </a>
               <a
-                href="https://github.com/Alazar351/Recipree"
+                href="https://github.com/Alazar351/Sunny-landing-page"
                 className="github"
                 target="_blank"
               >

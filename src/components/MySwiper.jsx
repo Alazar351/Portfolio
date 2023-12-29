@@ -76,19 +76,25 @@ export default function MySwiper() {
         <SwiperSlide className="swiper-slide">
           <div className="container">
             <div className="desc">
-              <h2>Vuestic-Ui</h2>
+              <h2>Sunnyside Landing Page</h2>
               <p>
-                Vuestic UI is an OpenSource Vue 3 based UI framework. It is a
-                MIT-licensed UI framework that provides ready-to-use frontend
-                components that are easily configurable and speed up development
-                of responsive and fast-loading web interfaces.{" "}
-                <span>I made a storybook for a component.</span>
+                A responsive landing page built based on a design provided by
+                Frontend Mentor.
               </p>
+              <img src={html} />
+              <img src={css} />
               <img src={js} />
             </div>
             <div className="link">
               <a
-                href="https://github.com/epicmaxco/vuestic-ui/pull/3963"
+                href="https://superlative-sunshine-af8e3f.netlify.app/"
+                target="_blank"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/Alazar351/Recipree"
+                className="github"
                 target="_blank"
               >
                 Github

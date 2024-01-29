@@ -24,6 +24,35 @@ export default function MySwiper() {
         <SwiperSlide className="swiper-slide">
           <div className="container">
             <div className="desc">
+              <h2>Oxelar Landing Page</h2>
+              <p>
+                A modern e-commerce landing page built based on a design sourced
+                on the internet.
+              </p>
+              <img src={html} />
+              <img src={css} />
+              <img src={js} />
+            </div>
+            <div className="link">
+              <a
+                href="https://oxelar-landing-page.netlify.app/"
+                target="_blank"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/Alazar351/e-Commerce-Landing-Page/tree/master"
+                className="github"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="container">
+            <div className="desc">
               <h2>Recipree</h2>
               <p>
                 Recipree is a dynamic recipe app crafted with HTML, CSS, and
@@ -68,35 +97,6 @@ export default function MySwiper() {
             </div>
             <div className="link">
               <a href="https://github.com/Alazar351/Hydration" target="_blank">
-                Github
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="container">
-            <div className="desc">
-              <h2>Sunnyside Landing Page</h2>
-              <p>
-                A responsive landing page built based on a design provided by
-                Frontend Mentor.
-              </p>
-              <img src={html} />
-              <img src={css} />
-              <img src={js} />
-            </div>
-            <div className="link">
-              <a
-                href="https://superlative-sunshine-af8e3f.netlify.app/"
-                target="_blank"
-              >
-                Live Site
-              </a>
-              <a
-                href="https://github.com/Alazar351/Sunny-landing-page"
-                className="github"
-                target="_blank"
-              >
                 Github
               </a>
             </div>

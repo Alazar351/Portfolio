@@ -31,7 +31,7 @@ export default function MySwiper() {
               </p>
               <img src={html} />
               <img src={css} />
-              <img src={js} />
+              <img src={react} />
             </div>
             <div className="link">
               <a

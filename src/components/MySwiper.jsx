@@ -24,6 +24,28 @@ export default function MySwiper() {
         <SwiperSlide className="swiper-slide">
           <div className="container">
             <div className="desc">
+              <h2>Modern Webpage</h2>
+              <p>A responsive modern webpage built with Shadcn & Tailwind</p>
+              <img src={html} />
+              <img src={css} />
+            </div>
+            <div className="link">
+              <a href="https://modern-webpage.vercel.app/" target="_blank">
+                Live Site
+              </a>
+              <a
+                href="https://github.com/Alazar351/modern-website"
+                className="github"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="container">
+            <div className="desc">
               <h2>Oxelar Landing Page</h2>
               <p>
                 A modern e-commerce landing page built based on a design sourced
@@ -75,28 +97,6 @@ export default function MySwiper() {
                 className="github"
                 target="_blank"
               >
-                Github
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="container">
-            <div className="desc">
-              <h2>Hydration</h2>
-              <p>
-                Hydration: A Chrome Extension dedicated to your wellness. Set
-                your water intake goals and available time. Choose from three
-                reminder frequencies. Stay on track with start, pause, and
-                restart buttons. Receive timely Chrome notifications, ensuring
-                you're always refreshed and hydrated.
-              </p>
-              <img src={html} />
-              <img src={css} />
-              <img src={js} />
-            </div>
-            <div className="link">
-              <a href="https://github.com/Alazar351/Hydration" target="_blank">
                 Github
               </a>
             </div>

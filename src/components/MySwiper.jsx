@@ -24,28 +24,6 @@ export default function MySwiper() {
         <SwiperSlide className="swiper-slide">
           <div className="container">
             <div className="desc">
-              <h2>Modern Webpage</h2>
-              <p>A responsive modern webpage built with Shadcn & Tailwind</p>
-              <img src={html} />
-              <img src={css} />
-            </div>
-            <div className="link">
-              <a href="https://modern-webpage.vercel.app/" target="_blank">
-                Live Site
-              </a>
-              <a
-                href="https://github.com/Alazar351/modern-website"
-                className="github"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="container">
-            <div className="desc">
               <h2>Oxelar Landing Page</h2>
               <p>
                 A modern e-commerce landing page built based on a design sourced
@@ -64,6 +42,28 @@ export default function MySwiper() {
               </a>
               <a
                 href="https://github.com/Alazar351/e-Commerce-Landing-Page/tree/master"
+                className="github"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="container">
+            <div className="desc">
+              <h2>Modern Webpage</h2>
+              <p>A responsive modern webpage built with Shadcn & Tailwind</p>
+              <img src={html} />
+              <img src={css} />
+            </div>
+            <div className="link">
+              <a href="https://modern-webpage.vercel.app/" target="_blank">
+                Live Site
+              </a>
+              <a
+                href="https://github.com/Alazar351/modern-website"
                 className="github"
                 target="_blank"
               >
